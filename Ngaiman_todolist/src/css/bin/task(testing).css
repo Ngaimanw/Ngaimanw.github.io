@@ -1,0 +1,125 @@
+body {
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-size: cover;
+    background: #fea1a1;
+    height: 100%;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper{
+    margin: 120px auto; /* 主體外圍高度 */
+    max-width: 400px;
+    width: 100%;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.wrapper .header{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wrapper .inputField{
+    display: flex;
+    height: 45px;
+    width: 100%;
+}
+
+.inputField input{
+    width: 85%;
+    height: 100%;
+    border: 2px solid #ccc;
+    font-size: 17px;
+    border-radius: 10px;
+    padding-left: 15px; 
+    /* (o_ver: 5px) */
+}
+
+
+.inputField button{ /* Add a new task button setting */
+    width: 50px;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #e44545;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 17px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+
+.wrapper .todoList{
+
+}
+
+.wrapper .todoList {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.todoList li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #F2f2f2;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 0 15px;
+    /* cursor: default;
+    overflow: hidden;  */
+    /* overflow 滑動效果 */
+}
+
+
+.todoList li span{ /* del bin button setting */
+    position: absolute;
+    right: -45px;
+    color: #fff;
+    width: 45px;
+    text-align: center;
+    border-radius: 0 3px 3px 0;
+    background: #e44545;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.todoList li :hover span {
+    right: 0px;
+}
+
+
+.wrapper .footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+
+
+.footer button { /* clear all button setting */
+    border: none;
+    outline: none;
+    background: #e44545;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 6px 10px;
+    opacity: 0.6;
+    pointer-events: none;
+}

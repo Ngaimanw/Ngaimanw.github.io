@@ -1,0 +1,212 @@
+html,
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-size: auto;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+h5 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+
+/* tasks-detail-topbar */
+
+.task-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: #e44545;
+    height: 60px;
+}
+
+.task-topbar .icon {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+/* .notification_button {
+    flex: 1;
+    display: flex;
+} */
+
+
+
+/* tasks-detail */
+
+.task-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.task-title {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.task-title h3 {
+    margin-top: 0px;
+}
+.task-remind {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+
+.remind-card {
+    
+    color: #FFF;
+    height: 40px;
+    width: 326px;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+/* Task area setting */
+
+.task-notes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-notes h5 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.task-notes-box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-notes .form-control {
+    display: flex;
+    justify-content: center;
+    height: 260px;
+    width: 326px;
+    border-radius: 10px;
+    border-color: #c4c4c4;
+    border-width: 2px;
+}
+
+.form-group {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: auto;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#formGroupExampleInput {
+    display: flex;
+    border: 2px #747474 solid;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 10px;
+    width: 258px;
+    padding-left: 15px;
+}
+
+.btn.btn-primary.mb-2 {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    color: #c4c4c4;
+}
+
+.submit-button input {
+    background-color: #747474;
+    outline: none;
+}
+
+#input-data-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center; 
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+
+
+/* bottom bar setting */
+
+
+.bottom-bar {
+    background-color: #e44545;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+}
+
+.bottom-bar .icon {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}

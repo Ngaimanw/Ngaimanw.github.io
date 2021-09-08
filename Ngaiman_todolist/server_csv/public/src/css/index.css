@@ -1,0 +1,315 @@
+/* update: 2021/8/19
+ver1 */
+
+html {
+    background-color: #E44545;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.25rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-size: 1.125rem;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+h5 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+/* login-page */
+
+.profile-page {
+    width: auto;
+    height: auto;
+}
+
+/* profile-topbar */
+
+.profile-topbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 55px;
+
+}
+
+.profile-topbar h6 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    color: #fff;
+}
+
+.profile-icon {
+    /* display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: center; */
+    margin-top: 124px;
+    width: 178px;
+    height: 178px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.profile-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+
+}
+
+.profile-text-box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group-p1 {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+
+}
+
+.form-group-p2 {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+
+.form-frame-p2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: inherit;
+}
+
+.form-frame {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    text-decoration: none !important;
+
+}
+
+.profile-text {
+    width: 60%;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#InputEmail {
+    display: flex;
+    /* border: 1px #000 solid; */
+    background-color: #fff;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-top: 65px;
+    width: 280px;
+    border-radius: 50px;
+    display: flex;
+    overflow: visible;
+    padding: .375rem ,75rem;;
+
+}
+
+#InputPassword {
+
+    display: flex;
+    /* border: 1px #000 solid; */
+    background-color: #fff;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-top: 65px;
+    margin: auto;
+    width: 280px;
+    border-radius: 50px;
+}
+
+
+.passwordHelp-text a {
+    text-decoration: none !important;
+    color: white;
+
+}
+
+
+label {
+    color: #FFF;
+}
+
+/* hidden blue underline */
+
+
+button {
+    background-color: #ffc633;
+    color: white;
+    width: 309px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+
+/* button 透明度 */
+button:hover {
+    opacity: 1;
+}
+
+.Login-button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 280px;
+    height: 40px;
+    border-radius: 50px;
+    align-items: center;
+    border-radius: 50px;
+    margin-top: 55px;
+}
+
+.Login-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-box {
+    margin-top: 5%;
+    margin-right: auto;
+    text-decoration: double;
+
+}
+
+.cancelbtn {
+    width: 280px;
+    margin-top: 10%;
+    background-color: #17ACFF;
+}
+
+
+.form-control {
+    padding-left: 15px;
+}
+
+/* tasks-page */
+
+.tasks-page {
+    display: flex;
+    height: 100%;
+    margin-top: 200px;
+}
+
+/* screen displacy setting */
+
+/* Topbar LOGO website display setting */
+@media only screen and (min-width: 550px) {
+    .profile-topbar {
+        display: none;
+    }
+
+    .profile-icon {
+        margin-top: 10%;
+    }
+
+    
+    
+
+}
+
+/*input setting*/
+
+input[type=text],
+input[type=email] {
+    /* width: 100%;
+    padding: 12px 20px; */
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #FFF;
+    box-sizing: border-box;
+}
+
+
+
+input[type=text],
+input[type=password] {
+    /* width: 100%;
+    padding: 12px 20px; */
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #FFF;
+    box-sizing: border-box;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+

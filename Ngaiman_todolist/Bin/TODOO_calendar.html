@@ -1,0 +1,67 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css">
+    <title>TODOO</title>
+</head>
+<body>
+
+
+  <!---topbar && meun button && notification button-->
+  <div class="task-topbar">
+    <div class="icon">
+        <nav class="menu_logo">
+            <img src="./src/img/menu(white).svg">
+        </nav>
+        <nav class="notification_button"><button onclick="alert('no new notification')"><img src="./src/img/notification (white).svg"></button>
+            
+        </nav>
+    </div>
+  </div>
+
+  <div id='calendar'>
+  </div>
+
+  <div class="wrapper">
+    <header>Calender</header>
+    <div id='calendar'>
+    </div>
+  </div>
+
+
+
+<!-- bottom bar area -->
+  <footer>
+    <div class="bottom-bar">
+        <div class="icon">
+          <div class="Task-icon">
+              <a href="./TODOO_task.html"><img src="./src/img/Task_small_icon(white).svg"></a>
+          </div>
+          <div class="calender">
+              <a href="./TODOO_calendar.html"><img src="./src/img/calendar_small_icon(white).svg"></a>
+          </div>
+          <div class="setting">
+            <button onclick="alert('Coming soon :)')"><img src="./src/img/settings_filled (white).svg"></button>
+              
+          </div>
+        </div>
+
+      
+    </div>
+</footer>
+
+
+
+  <script src="./src/js/calendar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js"></script>
+
+</body>
+</html>
+

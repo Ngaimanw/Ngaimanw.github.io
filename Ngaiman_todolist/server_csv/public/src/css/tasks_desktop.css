@@ -1,0 +1,339 @@
+html,
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #dfdfdf;
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+h5 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+
+/* container bar */
+
+.container-bar {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    max-width: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    height: 80px; 
+    
+    
+}
+
+/* main */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* left tool bar */
+
+.left-bar {
+    background-color: #939393;
+    align-items: center;
+    position: absolute;
+    width: 8%;
+    height: 100%;
+    margin-top: 0px;
+}
+
+.profile-icon-small {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 107px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.icon {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 60px;
+    height: 60px;
+    background: #DFDFDF;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.exit-button {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 107px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* main-container part */
+
+.main-container {
+    background-position: bottom;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 65%;
+    margin-left: 10%;
+}
+
+
+
+
+.date-button {
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    margin-top: 80px;
+
+}
+
+.dropdown {
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: #939393;
+    height: 70px;
+    border-radius: 20px;
+
+    
+}
+
+
+.main-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.main-banner .banner {
+    background-color: #939393;
+    width: 80%;
+    height: 246px;
+    border-radius: 20px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.tasks-card {
+    display: flex;
+    align-items: center;
+    background: #6b6c6d;
+    border: 1px solid #6b6c6d;
+    color: #FFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 80%;
+    margin-top: 60px;
+}
+
+.tasks-card h4 {
+    margin-left: 20px;
+}
+
+.tasks-card-second {
+    background: #6b6c6d;
+    border: 1px solid #6b6c6d;
+    color: #FFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 80%;
+    margin-top: 30px;
+}
+
+
+.form-group {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: auto;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
+
+#formGroupExampleInput {
+    display: flex;
+    border: 2px #747474 solid;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 10px;
+    width: 70%;
+    padding-left: 15px;
+    font-weight: 300;
+}
+
+.main-container .btn.btn-primary.mb-2 {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    color: #c4c4c4;
+}
+
+
+/* right-profile bar */
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+
+
+
+.right-profile-bar {
+    background-color: #c4c4c4;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25%;
+    height: 1024px;
+}
+
+.profile-icon {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    margin-top: 107px;
+    width: 178px;
+    height: 178px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notification {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+    width: 50px;
+    height: 50px;
+    background: #747474;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.profile-box .settings {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: #747474;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+}
+
+.profile-card div {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1px;
+}
+
+.invite-card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+}
+
+.invite {
+    display: flex;
+    flex: 2;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 40%;
+    background: #939393;
+    border: 1px solid #939393;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 350px;
+    flex-direction: column;
+    border-top: 10px;
+}

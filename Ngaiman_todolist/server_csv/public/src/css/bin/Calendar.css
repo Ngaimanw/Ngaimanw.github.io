@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  ::selection{
+    color: #ffff;
+    background: rgb(112, 76, 160);
+  }
+  body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    font-size: 2.75rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.125rem;
+  }
+
+
+/* tasks-topbar */
+
+.task-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: #17ACFF;
+    height: 60px;
+  }
+  
+  .task-topbar .icon {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .task-topbar button{
+    border: none;
+    outline: none;
+    background: #17ACFF;
+    cursor: pointer;
+  }
+
+  
+
+/* buttom bar setting */
+.bottom-bar {
+    background-color: #17ACFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0%;
+    height: 65px;
+  }
+  
+  .bottom-bar .icon {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+  
+  .bottom-bar button{
+    border: none;
+    outline: none;
+    background: #17ACFF;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* website display setting */
+  
+  @media only screen and (min-height: 1000px) {
+    .task-topbar{
+      display: none;
+    }
+  
+    .bottom-bar{
+      display: none;
+    }
+  }
+  
+  
+  /* mobile display setting */
+  
+  
+  
+  
+  /* testing area */

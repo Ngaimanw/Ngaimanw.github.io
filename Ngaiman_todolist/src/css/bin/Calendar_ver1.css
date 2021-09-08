@@ -1,0 +1,84 @@
+
+/* update: 2021/8/19
+ver1 */
+
+html,
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+/* tasks-topbar */
+
+.task-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; 
+    left: 0px;
+    top: 0px;
+    background-color: #e44545;
+    height: 60px;
+}
+
+.task-topbar .icon {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+/* main area setting */
+main {
+    background-color: #fff;
+    min-height: 80%;
+}
+
+/* footer-bar setting */
+
+.bottom-bar {
+    background-color: #e44545;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+}
+
+.bottom-bar .icon {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}

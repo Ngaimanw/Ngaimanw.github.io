@@ -1,0 +1,103 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/calendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>TODOO</title>
+</head>
+
+<body>
+  <header>
+      <!---topbar && meun button && notification button-->
+      <div class="task-topbar">
+      <div class="icon">
+          <nav class="menu_logo">
+            <button onclick="alert('the new function is coming soon :D')"><img src="./src/img/menu(white).svg"></button>
+          </nav>
+          <nav class="notification_button"><button onclick="alert('no new notification')"><img src="./src/img/notification (white).svg"></button>
+              
+          </nav>
+      </div>
+      </div>
+  </header>
+
+  <main>
+      <div id='calendar'></div>
+      <p>No completed</p>
+      <div class="itemList completed"></div>
+      <p>Completed</p>
+      <div class="itemList nocompleted"></div>
+      <div class="addButton">
+          <button type="button"><h1>+</h1></button>
+      </div>
+  
+      <form id='itemForm' class="noshow">
+          <div class="Topoption">
+            <button type="button" id='x'>x</button>
+          
+          </div>
+          <div class="">
+              <label for="name">
+                  <p>Task Name</p>
+                  <input type="text" id="name" name="taskName">
+              </label>
+              <label for="assignedTo">
+                  <p>AssignedTo</p>
+                  <input type="text" id='assignedTo' name="assignedTo">
+              </label>
+              <label for="status">
+                  <p>status</p><input type="checkbox" id="status" name="status" value="yes">
+              </label>
+              <label for="details">
+                  <p>Description</p>
+                  <textarea id='details' name="details" id="" cols="30" rows="10"></textarea>
+              </label>
+                <Iabel for="due-date">
+                <p>Due Date</p>
+                <input type="date" id="due-date" name="due" required>
+                </Iabel>
+              <div class="option">
+                  <button type="button" id='submit'>Submit</button>
+                  <button type="submit" id='delete' value="<? = $ID; ?>">Delete</button>
+              </div>
+              <!-- <button><i class="fas fa-trash"></i></button> -->
+  
+          </div>
+      </form>
+  </main>
+
+  <!-- bottom bar area -->
+<footer>
+  <div class="bottom-bar">
+      <div class="icon">
+        <div class="Task-icon">
+            <a href="./TODOO_task.html"><img src="./src/img/Task_small_icon(white).svg"></a>
+        </div>
+        <div class="calender">
+            <a href="./TODOO_calendar.html"><img src="./src/img/calendar_small_icon(white).svg"></a>
+        </div>
+        <div class="setting">
+          <button onclick="alert('the new function is coming soon :D')"><img src="./src/img/settings_filled (white).svg"></button>
+            
+        </div>
+      </div>
+
+    
+  </div>
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js"></script>
+  <script src="./src/js/calendar.js"></script>
+</body>
+
+</html>
+

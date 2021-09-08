@@ -1,0 +1,254 @@
+
+/* update: 2021/8/19 ver1 */
+/* update: 2021/8/20 ver 2 */
+/* update: 2021/8/22 ver 3 */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+::selection{
+  color: #ffff;
+  background: rgb(112, 76, 160);
+}
+body{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+
+/* tasks-topbar */
+
+.task-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: #17ACFF;
+  height: 60px;
+}
+
+.task-topbar .icon {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.task-topbar button{
+  border: none;
+  outline: none;
+  background: #17ACFF;
+  cursor: pointer;
+}
+
+
+/* task box setting */
+
+.wrapper{
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  margin: 120px auto;
+  padding: 55px 25px 30px 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+
+.wrapper header{
+  font-size: 30px;
+  font-weight: 600;
+}
+.wrapper .inputField{
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+  margin-top: 25px;
+}
+
+.inputField input{
+  width: 90%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.inputField input:focus{
+  border-color: #c4c4c4;
+  border: 2px solid #c4c4c4;
+}
+.inputField button{
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  margin-left: 15px;
+  font-size: 21px;
+  outline: none;
+  background: #17ACFF;
+  cursor: pointer;
+  border-radius: 50px;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.inputField button:hover,
+.footer button:hover{
+  background: #17ACFF;
+}
+.inputField button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .todoList{
+  max-height: 250px;
+  overflow-y: auto;
+}
+.todoList li{
+  position: relative;
+  list-style: none;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  color: #fff;
+  background: #1774ff;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: default;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.todoList li .icon{
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  width: 45px;
+  text-align: center;
+  color: #20292e;
+  padding: 10px 15px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.todoList li:hover .icon{
+  right: 0px;
+}
+
+/* clear all line && button setting */
+
+.wrapper .footer{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 5%;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.footer button{
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 5px;
+  background: #17ACFF;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.footer button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/* buttom bar setting */
+.bottom-bar {
+  background-color: #17ACFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0%;
+  height: 65px;
+}
+
+.bottom-bar .icon {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+.bottom-bar button{
+  border: none;
+  outline: none;
+  background: #17ACFF;
+  cursor: pointer;
+}
+
+
+
+/* website display setting */
+
+@media only screen and (min-height: 1000px) {
+  .task-topbar{
+    display: none;
+  }
+
+  .bottom-bar{
+    display: none;
+  }
+}
+
+
+/* mobile display setting */
+
+
+
+
+/* testing area */

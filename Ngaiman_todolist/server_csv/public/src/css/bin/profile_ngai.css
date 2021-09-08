@@ -1,0 +1,90 @@
+html {
+    background-color: #fff;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 100%;
+}
+
+/* to be confirm 未知會否在此頁使用search bar */
+
+/* #DataList {
+    margin-top: 5%;
+    width: 178px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;    margin-bottom: 20%;
+    text-decoration: none;
+    background-color: #e44545;
+} */
+
+h1 {
+    font-size: 2.25rem;
+}
+
+
+#exampleDataList {
+    box-sizing: border-box;
+}
+
+
+#profile {
+    display: flex;
+    background-size: cover;
+    margin-top: auto;
+    height: 812px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-icon { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    width: 178px;
+    height: 178px;
+    color: #fff;
+    background: #e44545;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    color: #e44545;
+    margin-bottom: 25px;
+    /*margin-right: 20%;*/
+
+}
+
+.go-button {
+    background-color: #e44545;
+    width: 178px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;    margin-bottom: 20%;
+    text-decoration: none;
+}
+
+.button {
+    margin-top: 0%;
+
+}
+
+.button h3 {
+    color: white;
+}

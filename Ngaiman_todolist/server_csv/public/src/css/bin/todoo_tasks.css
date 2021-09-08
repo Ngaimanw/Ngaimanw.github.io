@@ -1,0 +1,371 @@
+
+/* update: 2021/8/19 ver1 */
+/* update: 2021/8/20 ver 2 */
+
+html,
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-size: cover;
+    background: #fff;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+/* tasks-topbar */
+
+.task-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; 
+    left: 0px;
+    top: 0px;
+    background-color: #e44545;
+    height: 60px;
+}
+
+.task-topbar .icon {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+header {
+}
+
+main {
+    display: flex;
+    
+}
+
+footer {
+}
+
+/* search-bar部份setting */
+
+.search-bar {
+    margin-top: 3%;
+    height: 48px;
+    border: 2px solid #c4c4c4;
+}
+
+
+/* Task-box area setting */
+.todoList ul{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.wrapper {
+    margin: 119px auto;
+    max-width: 330px;
+    width: 100%;
+    border: 2px solid #fea1a1;
+    border-radius: 5px;
+    padding: 25px;
+    height: 527px;
+}
+
+.wrapper header {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.wrapper .input-Field {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.wrapper .footer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.wrapper .todoList {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+/* todoList 外框setting  */
+
+.todoList li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #F2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+
+
+.todoList li span {
+    position: absolute;
+    right: -45px;
+    color: #fff;
+    width: 45px;
+    text-align: center;
+    background: #e44545;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todoList li :hover span {
+    right: 0px;
+}
+
+.todoList li button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 0px;
+    color: #fff;
+    width: 45px;
+    text-align: center;
+    background: #FFC633;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+
+
+/* input setting */
+
+.input-Field input {
+    width: 85%;
+    height: 100wrapp%;
+    border: 1px solid #e5e5e5;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+
+
+
+
+.first-footer.inputField button {
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #e44545;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    /* border-radius: 50px;
+    margin-left: 5px; */
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.inputField {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputField button.active {
+    opacity: 1;
+    pointer-events: none;
+}
+
+/* main底部 Clear all setting */
+
+.footer button {
+    border: none;
+    outline: none;
+    background: #e44545;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 6px 10px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.footer button.active {
+    opacity: 1;
+    pointer-events: none;
+}
+
+.today a {
+    color: #fff;
+    text-decoration: none;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+}
+
+.form-check {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding-right: 20px;
+}
+
+
+.form-group {
+    display: flex;
+    margin-top: 145px;
+}
+
+.form-group {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: auto;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#formGroupExampleInput {
+    display: flex;
+    border: 2px #747474 solid;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 10px;
+    width: 258px;
+    padding-left: 15px;
+}
+
+
+
+
+.bottom-bar {
+    background-color: #e44545;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+}
+
+.bottom-bar .icon {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* end of tasks-topbar */
+
+@media(max-width: 600px) {
+
+}
+
+
+/* ver 1 setting */
+
+/* .tasks-card {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, lfr)); 
+     auto-fit() 可讓element依照畫面寬度自動換行 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 46px;
+}  */
+
+
+/* .tasks-card-pink1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    background: #fea1a1;
+    border: 1px solid #fea1a1;
+    color: #FFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 326px;
+    padding-left: 20px;
+}
+
+.tasks-card-blue1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background: #45a1e4;
+    border: 1px solid #45a1e4;
+    color: #FFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 326px;
+    padding-left: 20px;
+}
+
+.tasks-card-blue2 {
+    background: #e44545;
+    border: 1px solid #e44545;
+    color: #FFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 326px;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.upcoming-card {
+    background: #17ACFF;
+    border: 1px solid #17ACFF;
+    color: #FFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 326px;
+    padding-left: 20px;
+}
+
+
+.someday-card {
+    background: #FFC633;
+    border: 1px solid #FFC633;
+    color: #FFF;
+    border-radius: 10px;
+    height: 40px;
+    width: 326px;
+    padding-left: 20px;
+} */

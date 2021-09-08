@@ -1,0 +1,11 @@
+file name : script.js
+// update : *2021/8/20 *ver 1 *task : create script.js and add function setting
+
+
+file name : tasks.html
+// update : *2021/8/19 *ver 1 
+// update : *2021/8/20 *ver 2 *task : create add a new task button
+
+file name : 
+
+

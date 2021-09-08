@@ -1,0 +1,188 @@
+html, 
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+h5 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+/* profile-page */
+
+.profile-page {
+    width: auto;
+    height: 812px;
+}
+
+/* profile-topbar */
+
+.profile-topbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: #DFDFDF;
+    height: 55px;
+
+}
+
+.profile-topbar h1 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.profile-icon {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    margin-top: 107px;
+    width: 178px;
+    height: 178px;
+    background: #DFDFDF;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile-text-box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column
+}
+
+.form-frame {
+    width: 295px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-text {
+    width: 60%;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#exampleInputEmail1 {
+    display: flex;
+    border: 1px #000 solid;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-top: 65px;
+    margin: auto;
+    width: 100%;
+    border-radius: 50px;
+
+}
+
+#exampleInputPassword1 {
+
+    display: flex;
+    border: 1px #000 solid;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-top: 65px;
+    margin: auto;
+    width: 100%;
+    border-radius: 50px;
+}
+
+#exampleInputEmail1 {
+    display: flex;
+    overflow: visible;
+    padding: .375rem ,75rem;;
+}
+
+.passwordHelp {
+    color: #c4c4c4;
+}
+
+
+.btn-btn-primary {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 310px;
+    height: 40px;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.form-control {
+    padding-left: 15px;
+}
+
+
+.submit {
+    color: #939393;
+}
+
+/* tasks-page */
+
+.tasks-page {
+    display: flex;
+    height: 100%;
+    margin-top: 200px;
+}
+
+/* screen display setting */
+
+@media only screen and (min-width: 500px) {
+    .profile-topbar {
+        display: none;
+    }
+    
+
+}

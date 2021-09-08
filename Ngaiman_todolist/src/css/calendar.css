@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  ::selection{
+    color: #ffff;
+    background: rgb(112, 76, 160);
+  }
+  body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  }
+  
+
+  h1 {
+    font-size: 2.75rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.125rem;
+  }
+
+
+/* tasks-topbar */
+
+.task-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: #17ACFF;
+  height: 60px;
+}
+
+.task-topbar .icon {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.task-topbar button{
+  border: none;
+  outline: none;
+  background: #17ACFF;
+  cursor: pointer;
+}
+
+/* calendar style setting */
+
+.fc .fc-toolbar.fc-header-toolbar {
+margin-bottom: 10%;
+}
+
+
+element.style {
+background-color: #17ACFF;
+}
+
+#calendar {
+  background: #fff;
+  width: 100%;
+  min-width: 400px;
+  max-width: 1000px;
+  padding: 55px 46px 55px 46px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 10px 10px 0px rgba(14, 13, 13, 0.1);
+}
+
+.item {
+  margin-top: 20%;
+  border: 1px solid #17ACFF;
+  background-color: #17ACFF;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 400px;
+}
+
+#itemForm {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #fff;
+  padding: 10px;
+  position: fixed;
+  top: -5%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+}
+
+element.style {
+margin-top: revert;
+margin-right: 0px;
+}
+
+
+
+p {
+  margin: 0;
+  margin-left: 5%;
+  margin-right: %;
+}
+
+#itemForm.noshow {
+  /* opacity: 0; */
+  transition: all 1s;
+  top: -100vh;
+}
+
+.addButton {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.addButton>button {
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+  outline: none;
+  border: none;
+  background: #17ACFF;
+  cursor: pointer;
+  border-radius: 50px;
+  pointer-events: none;
+
+}
+
+button h1 {
+color: #fff;
+
+}
+
+
+/* textarea details setting */
+
+input {
+border-radius: 10px;
+min-width: 300px;
+margin-top: 5%;
+margin-bottom: 5%;
+border: 2px solid #c4c4c4;
+min-height: 35px;
+}
+
+textarea {
+border-radius: 10px;
+min-width: 300px;
+margin-top: 5%;
+margin-bottom: 5%;
+border: 2px solid #c4c4c4;
+}
+
+input#status {
+margin-left: -40%;
+}
+
+button#submit {
+padding: 10px 15px;
+border-radius: 3px;
+border: none;
+outline: none;
+color: #fff;
+font-weight: 400;
+font-size: 16px;
+margin-left: 5px;
+background: #17ACFF;
+cursor: pointer;
+user-select: none;
+}
+
+button#x {
+padding: 10px 15px;
+border-radius: 3px;
+border: none;
+outline: none;
+color: #fff;
+font-weight: 400;
+font-size: 16px;
+margin-left: 5px;
+background: #17ACFF;
+cursor: pointer;
+user-select: none;
+}
+
+
+/* buttom bar setting */
+.bottom-bar {
+background-color: #17ACFF;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 0%;
+height: 65px;
+}
+
+.bottom-bar .icon {
+display: flex;
+flex: 1;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+margin-left: 15%;
+margin-right: 15%;
+}
+
+
+.bottom-bar button{
+border: none;
+outline: none;
+background: #17ACFF;
+cursor: pointer;
+}
+
+
+
+/* website display setting */
+
+@media only screen and (min-height: 1000px) {
+.task-topbar{
+  display: none;
+}
+
+.bottom-bar{
+  display: none;
+}
+}
+
+
+/* mobile display setting */
+
+
+
+
+/* testing area */
