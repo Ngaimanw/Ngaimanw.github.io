@@ -110,7 +110,6 @@ async function fetchCreateToDoItem(dataObj) {
             // 送出的資料放在body內。但要以JSON.stringify()來將object轉為json格式
             body: JSON.stringify(dataObj)
         });
-    
 }
 
 submit.addEventListener('click', () => {
@@ -143,9 +142,7 @@ submit.addEventListener('click', () => {
         }
 
         fetchCreateToDoItem(dataObj)
-
         displayItemByDate(date)
-        console.log(toDoListItem)
         return
     }
 
@@ -201,24 +198,24 @@ document.querySelector('.addButton').addEventListener('click', () => {
 
 /* testing area */
 
-// const deletetBin = document.querySelector('#delete')
+const deletetBin = document.querySelector('#delete')
+deletetBin.addEventListener('click', () => {
+    const
+})
 
-// async function fetchDeleteToDoItem(itemId) {
-//     const res = await fetch('http://localhost:8080/todolist',
-//         {
-//             method: 'DELETE',
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             },
-//             body: JSON.stringify(itemId)
+async function fetchDeleteToDoItem(itemId) {
+    const res = await fetch('http://localhost:8080/todolist',
+        {
+            method: 'DELETE',
+        });
+}
 
-//         });
-// }
-
-// console.log(dataObj);
+console.log(dataObj);
 
 
 // deletetBin.addEventListener('click', () => {
 //     const itemForm = document.querySelector('#itemForm')
 //     itemForm.classList.add('noshow')
 // })
+
+// itemId = item.getAttribute('data-id')
