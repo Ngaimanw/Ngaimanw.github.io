@@ -87,8 +87,10 @@ async function main() {
                 itemForm.details.value = details
 
                 itemId = item.getAttribute('data-id')
-                itemForm.querySelector('#delete').addEventListener('click', () => {
-                    fetchDeleteToDoItem(itemId)
+                itemForm.querySelector('#delete').addEventListener('click',async () => {
+                    await fetchDeleteToDoItem(itemId)
+                    await fetchGetToDoListItem()
+                    toDoListItem.filter(item => item.id !== itemId)
                     item.remove()
                     itemForm.classList.add('noshow')
                 })
