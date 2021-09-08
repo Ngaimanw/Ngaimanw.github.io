@@ -65,7 +65,6 @@ export class Controller {
 
     // [done] Note: 1-id, 2-content, 3-dueDate 4-inputDate 5-picture
     postTodoList = async (req: Request, res: Response) => {
-        console.log(req.body)
         const tasks = await this.service.readTodoList()
         const maxTaskID = tasks.reduce((acc, cur) => {
             console.log('acc: ' + acc)
