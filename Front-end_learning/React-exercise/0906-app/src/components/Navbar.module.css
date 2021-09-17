@@ -1,0 +1,40 @@
+.changeList{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid #000000;
+    margin: 0 4px;
+}
+
+
+.navbar{
+    width: 100hw;
+    height: 30px;
+    background-color: #4f8bfe;
+    border: 2px solid #000000;
+    display: flex;
+    align-items: center;
+}
+
+
+.pageList button{
+    width: 80px;
+    padding: 5px;
+    margin: 3px 0;
+    background-color: rgb(248, 248, 248);
+}
+
+.pageList{
+    width: 20%;
+    min-height: 100vh;
+    background-color: #3173ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transition: all 1s;
+}
+
+.noShow{
+    left: -100%;
+}
