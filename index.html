@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Page/src/css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&display=swap" rel="stylesheet">
+    
+
     <title>Ngaimanw</title>
 </head>
 <body>
@@ -22,8 +25,9 @@
 
         <ul class="navbar-nav">
             <li><a href="#">HOME</a></li>
-            <li><a href="https://drive.google.com/file/d/1uCbRHWF8x3ub-qGG819Ec1aYOpTN6FVZ/view?usp=sharing">WORKS</a></li>
             <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>                        
+            <li><a href="https://drive.google.com/file/d/1uCbRHWF8x3ub-qGG819Ec1aYOpTN6FVZ/view?usp=sharing">PORTFOLIO</a></li>
             <li><a href="#">CONTACT</a></li>
 
         </ul>
@@ -32,27 +36,69 @@
     <div id="side-menu" class="side-nav">
         <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
         <a href="./index.html">HOME</a>
-        <a href="https://drive.google.com/file/d/1uCbRHWF8x3ub-qGG819Ec1aYOpTN6FVZ/view?usp=sharing">WORKS</a>
         <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="https://drive.google.com/file/d/1uCbRHWF8x3ub-qGG819Ec1aYOpTN6FVZ/view?usp=sharing">PORTFOLIO</a>
         <a href="#">CONTACT</a>
     </div>
     
-    <script src="./Page/src/js/menu.js"></script>
+    <script src="./src/js/menu.js"></script>
 
     <div id="main">
         <div class="header-content">
-            <h3>welcome to my portfolio</h3>
+            <span style="color: #d49469;">welcome to my portfolio</span>
             <h1>HELLO</h1>
-            <h1></h1>
-            <h2>IS COMING SOON</h2>            
+            <h1>I'm NGAIMAN</h1>          
+        </div>
+        
+        <div id="about">
+            <div class="about-title"><h1 style="color: #fff;">ABOUT.</h1></div>
+            <div class="about-box">
+                <h4>I am a design & roject development professional and aim to contribute my expertise to a front-end developer position.</h4>
+            </div>
+        </div>
+
+        <div id="services">
+            <div class="services-title"><h1 style="color: #fff;">SERVICES.</h1></div>
+
+            <div class="services-box">
+                <button><h3>Front-end</h3></button>
+                <button><h3>UI Designs</h3></button>
+                <button><h3>Graphic Design</h3></button>
+                <button><h3>Print Production</h3></button>                
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="contact-title"><h1 style="color: #fff;">CONTACT</h1></div>
+            <div class="contact-box">
+                <div class="contact-card">
+                    <P>+852 6849 1298</p>
+                    <p>wongngaiman.ngaiman@gmail.com</p>
+                    <p><a href="https://www.linkedin.com/in/ngaiman/">linkedin.com/in/ngaiman</a></p>
+                    <button><a href="mailto:wongngaiman.ngaiman@gmail.com">CONTACT ME</a></button>                    
+                </div> 
+
+                <div class="contact-card">
+                    <p>ABOUT</p>
+                    <p>SERVICES</p>
+                    <p>PORTFOLIO</p>
+                </div>
+
+            </div>
+
         </div>
 
 
-    <div id="button">
-        <button><a href="mailto:wongngaiman.ngaiman@gmail.com">CONTACT ME</a></button>
-    </div>        
+       
 
     </div>
+
+    <footer>
+        <div class="footer-message">
+            <p>&copy;Copyright 2021 ngaimanw</p>
+        </div>
+    </footer>
 
 </body>
 </html>

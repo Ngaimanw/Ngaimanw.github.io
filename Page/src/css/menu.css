@@ -1,18 +1,31 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
     background-color: #272525;
     background-image: url(../img/bg-01.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
+    width: 100vw;
     color: #cecece;
     
 }
 
+#main{
+}
 
 h1{
     color: #cecece;
+    letter-spacing: 3px;
 }
+
+
+h4{
+    font-size: 18px;
+    /* letter-spacing: 1px; */
+    line-height: 30px;
+}
+
 .navbar{
     /* background-color: #111; */
     overflow: hidden;
@@ -84,24 +97,104 @@ h1{
 } */
 
 #main{
-    margin-top: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
 
-#main button{
-    background-color: #d49469;
-    border: none;
-    cursor: pointer;
-    width: 120px;
-    height: 50px;
-    border-radius: 5px;    
-    margin-top: 40%;
+
+.header-content{
+    margin: 5%;
 }
 
-#main button a{
+
+/* about part setting */
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about-box{
+    margin: 1% 10% 1% 10%;
+}
+
+.about-box h4{
+    flex-direction: column;
+}
+
+
+/* services part setting */
+#services{
+    display: flex;
+    height: 20%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#services .services-box{
+    
+}
+
+.services-box h1{
+    color: rgb(255, 255, 255);
+}
+
+
+#services .services-box button{
+    background-color: #363636;
+    color: #cecece;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 140px;
+    height: 140px;
+    margin: 5px;
+}
+
+
+#services button:hover{
+    background-color: #d49469;
+    color: #000;
+}
+
+
+/* contact part setting */
+#contact{
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.contact-card{
+    flex: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: #cecece;
+}
+
+a:hover{
+    color: #d49469;
+}
+
+
+
+#contact button a{
     font-weight: bolder;
     color: white;
     /* remove text bottom highlight */
@@ -111,6 +204,30 @@ h1{
     cursor: pointer;
 }
 
+#contact button{
+    background-color: #d49469;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;    
+    margin-top: 5%;
+}
+
+
+/* footer setting */
+
+footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.footer-message{
+    margin-left: 5px;
+}
+
+
 
 @media (max-width:568px){
     navbar-nav{display: none}
@@ -119,3 +236,16 @@ h1{
 @media(min-width:550px){
     .open-slide{display: none}
 }
+
+
+/* testing area */
+/* 
+#services-t{
+    display: grid;
+}
+
+.item{
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+} */
