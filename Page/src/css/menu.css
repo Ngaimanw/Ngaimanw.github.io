@@ -220,13 +220,18 @@ a:hover{
 footer{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 100px;
 }
 
 .footer-message{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
+.footer-icon img{
+    width: 10%;
+    margin-right: 10px;
+}
 
 
 @media (max-width:568px){
