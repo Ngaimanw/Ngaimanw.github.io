@@ -1,5 +1,8 @@
 // if else
 
+// || = or : if one thing is ture, it can run
+// && = and : it must be two both have to be ture/false, is can run
+
 const x = 8;
 const y = 11;
 
@@ -15,5 +18,3 @@ if(x > 10 || y > 10) {
 //     console.log('x is less 10');
 // }
 
-// || = or : if one thing is ture, it can run
-// && = and : it must be two both have to be ture/false, is can run
