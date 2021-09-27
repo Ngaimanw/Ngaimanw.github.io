@@ -18,14 +18,9 @@
       <!---topbar && meun button && notification button-->
       <div class="task-topbar">
         <div class="icon">
-          <span class="open-slide"> 
-            <a href="#" onclick="openSlideMeun()">
-                <svg width="30" height="30">
-                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-                </svg>
-            </a>
+            <nav class="menu_logo">
+              <button onclick="alert('the new function is coming soon :D')"><img src="./src/img/menu(white).svg"></button>
+            </nav>
             <nav class="notification_button"><button onclick="alert('no new notification')"><img src="./src/img/notification (white).svg"></button>
                 
             </nav>
@@ -84,12 +79,12 @@
       </form>
     
     <!-- left menu bar -->
-  <div id="side-menu" class="side-nav">
-    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-    <a href="./TODOO_profile.html"><img src="./src/img/bar/home-smile-line.svg" >Home</a>
-    <a href="./TODOO_task.html"><img src="./src/img/bar/circle_check_outline.svg">Task</a>
-    <a href="./TODOO_calendar.html"><img src="./src/img/bar/calendar.svg">Calendar</a>
-    <a href="#" onclick="alert('the new function is coming soon :D')"><img src="./src/img/bar/settings.svg">Setting</a>
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">Task</a>
+      <a href="#">Calendar</a>
+      <a href="#">Setting</a>
   </div>
 
   </main>
@@ -118,7 +113,17 @@
 
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js"></script>
   <script src="./src/js/calendar.js"></script>
-  <script src="./src/js/leftmenu.js"></script>
+  <script>
+    function openSlideMeun(){
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+        document.getElementById('side-menu').style.width = '0px';
+        document.getElementById('main').style.marginLeft = '0px';
+    }
+</script>
 </body>
 
 </html>
