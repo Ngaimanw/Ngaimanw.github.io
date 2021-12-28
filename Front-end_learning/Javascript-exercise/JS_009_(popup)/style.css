@@ -1,0 +1,44 @@
+* {
+    background-color: thistle;
+}
+
+.popup-window {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    /*cursor : 遊標 pointer : 指針*/
+}
+
+/* popup window setting */
+
+.popup-window .popup-text {
+    visibility: hidden;
+    width: 300px;
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0;
+    position: absolute;
+    /* abdolute : 絕對*/
+    z-index: 2;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* popup arrow */
+
+.popup-window .popup-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ececec transparent transparent transparent;
+    /* transparent : 透明 */
+}
+
+
