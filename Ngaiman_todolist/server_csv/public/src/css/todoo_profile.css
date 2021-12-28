@@ -88,3 +88,21 @@ h1 {
 .button h3 {
     color: white;
 }
+
+
+/* testing area */
+@media (prefers-reduced-motion: no-preference) {
+    .user-icon {
+      animation: user-icon-spin infinite 3s linear;
+    }
+  }
+
+  @keyframes user-icon-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+    

@@ -1,6 +1,6 @@
 let itemId = 0
 let isAdd = false
-let selectDate = '2021-09-08'
+let selectDate = true
 let nextId = 4
 let toDoListItem = []
 
@@ -13,8 +13,10 @@ async function main() {
             initialView: 'dayGridMonth',
             dateClick: (info) => {
                 console.log(info.dateStr)
+                console.log('click')
                 selectDate = info.dateStr
                 displayItemByDate(info.dateStr)
+            
             }
         });
         calendar.render();
@@ -198,6 +200,7 @@ async function main() {
 
 
 
+
     /* testing area */
 
     const deletetBin = document.querySelector('#delete')
@@ -213,6 +216,17 @@ async function main() {
             });
     }
 
+
+    // left-menubar setting
+    function openSlideMeun(){
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+        document.getElementById('side-menu').style.width = '0px';
+        document.getElementById('main').style.marginLeft = '0px';
+    }
 
     // deletetBin.addEventListener('click', () => {
     //     const itemForm = document.querySelector('#itemForm')
