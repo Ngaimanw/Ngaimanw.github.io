@@ -41,4 +41,23 @@
     /* transparent : 透明 */
 }
 
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
 
+.popup-window .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1.2s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* opacity 不透明度*/
