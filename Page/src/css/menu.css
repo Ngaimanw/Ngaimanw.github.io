@@ -6,12 +6,13 @@ body{
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
     color: #cecece;
     
 }
 
 #main{
+    display: flex;
+    flex-direction: column;
 }
 
 h1{
@@ -27,7 +28,6 @@ h4{
 }
 
 .navbar{
-    /* background-color: #111; */
     overflow: hidden;
     height: 63px;
 }
@@ -89,20 +89,6 @@ h4{
     margin-left: 50px;
 }
 
-/* #main{
-    transition:margin-left 0.5s;
-    padding: 20px;
-    overflow: hidden;
-    width: 100%;
-} */
-
-#main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
 
 .header-content{
     margin: 10%;
@@ -152,7 +138,6 @@ h4{
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
-    margin-bottom: 100px;
     height: 400px;
 }
 
@@ -254,10 +239,6 @@ footer{
 }
 
 
-@media (max-width:568px){
-    navbar-nav{display: none}
-}
-
 @media(min-width:550px){
     .open-slide{display: none}
 }
@@ -266,18 +247,10 @@ footer{
     .services-box{
         flex-direction: column;
         align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
     }
+    navbar-nav{display: none}
 }
 
-
-/* testing area */
-/* 
-#services-t{
-    display: grid;
-}
-
-.item{
-    background-color: #fff;
-    color: black;
-    padding: 10px;
-} */

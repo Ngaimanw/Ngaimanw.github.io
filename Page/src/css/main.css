@@ -1,0 +1,21 @@
+.grid {
+    display: grid;
+    gap: 26px;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+}
+
+#services-g {
+    padding: 6% 10% 50px 10%;
+}
+
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-column: auto;
+        grid-row: auto;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    }
+}
